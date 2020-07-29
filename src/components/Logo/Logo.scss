@@ -1,0 +1,17 @@
+@charset "UTF-8";
+
+.container {
+  color: #fff;
+  font-size: 22vh;
+  font-family: "EYfont-Bold", "EYfont", "Noto Sans", Arial, sans-serif;
+  text-align: center;
+  span {
+    &.bold {
+      color: #ffe600;
+    }
+  }
+  &.small {
+    padding: 4vh 0;
+    font-size: 6rem;
+  }
+}
