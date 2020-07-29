@@ -1,0 +1,17 @@
+# Dependency
+/node_modules
+
+# Build output
+/dist
+
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# OS
+.DS_Store
+
+# Environment variables
+.env
+.env.test

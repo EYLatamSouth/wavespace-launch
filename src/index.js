@@ -1,13 +1,10 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import { HashRouter } from 'react-router-dom';
-import './styles/main.scss';
-import App from './components/App/App';
-import registerServiceWorker from './registerServiceWorker';
+import { render } from 'react-dom';
 
-ReactDOM.render((
-  <HashRouter>
-    <App />
-  </HashRouter>
-  ), document.getElementById('root'));
-registerServiceWorker();
+import "./assets/favicon/favicon";
+import "./assets/scss/main.scss";
+
+import Main from "./components/Main";
+
+const rootElement = document.getElementById('root');
+rootElement ? render(<Main />, rootElement) : false;

@@ -1,0 +1,23 @@
+.welcome-container {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  .skyline {
+    background-image: url("../../assets/img/galaxy.jpg");
+    background-size: cover;
+    background-position: top center;
+    .boundary {
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      & > img {
+        max-width: 100%;
+        max-height: 100%;
+      }
+    }
+  }
+}
