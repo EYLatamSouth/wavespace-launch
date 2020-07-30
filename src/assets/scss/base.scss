@@ -1,0 +1,28 @@
+@import "./abstracts/colors";
+@import "./abstracts/variables";
+
+html, body, #root {
+  min-height: 100%;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  margin: 0;
+  background-color: $black;
+  padding: 0;
+  color: $white;
+  font-family: $ey-font;
+  font-size: 1em;
+  -webkit-font-smoothing: antialiased !important;
+}
+
+small {
+  font-size: 75%;
+}
+
+canvas {
+  display: block;
+}

@@ -1,15 +1,7 @@
+@import "../../assets/scss/abstracts/variables";
+
 .logo-container {
-  color: #fff;
   font-size: 22vh;
-  font-weight: 700;
+  font-weight: $bold-font;
   text-align: center;
-  span {
-    &.gold {
-      color: #ffd500;
-    }
-  }
-  &.small {
-    padding: 4vh 0;
-    font-size: 6rem;
-  }
 }

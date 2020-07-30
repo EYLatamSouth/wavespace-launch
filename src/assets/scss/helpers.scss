@@ -1,0 +1,21 @@
+@import "./abstracts/colors";
+@import "./abstracts/variables";
+
+// color
+.golden {
+  color: $ey-yellow !important;
+}
+.black {
+  color: $black !important;
+}
+.white {
+  color: $white !important;
+}
+
+// font-weight
+.light {
+  font-weight: $light-font !important;
+}
+.bold {
+  font-weight: $bold-font !important;
+}

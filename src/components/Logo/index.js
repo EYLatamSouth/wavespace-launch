@@ -4,11 +4,11 @@ import "./style.scss";
 
 class Logo extends Component {
   render() {
-    const styleClasses = this.props.absolute ? "logo-container small" : "logo-container";
-
     return (
-      <div className={styleClasses}>
-        <span>wave</span><span className="gold">space</span>
+      <div className="logo-container">
+        <span>wave</span>
+        <span className="golden">space</span>
+        {this.props.full && <small className="light"> | LAS</small>}
       </div>
     );
   }

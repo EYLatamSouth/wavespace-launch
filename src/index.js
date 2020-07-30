@@ -1,8 +1,10 @@
 import React from 'react';
 import { render } from 'react-dom';
 
-import "./assets/favicon/favicon";
-import "./assets/scss/main.scss";
+import "./assets/favicon";
+import "./assets/scss/ey-font.scss";
+import "./assets/scss/base.scss";
+import "./assets/scss/helpers.scss";
 
 import Main from "./components/Main";
 

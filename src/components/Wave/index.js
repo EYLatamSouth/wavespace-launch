@@ -9,12 +9,13 @@ const HEIGHT = window.innerHeight;
 const BASELINE = HEIGHT * 0.5;
 const STEP = Math.ceil(WIDTH / COUNT);
 
-class Wave2 extends Component {
+class Wave extends Component {
   fill(points, ...osc) {
     for (let i = 0; i < COUNT; i++) {
       points[i] = this.mixer(...osc);
     }
   }
+
   mixer() {
     let d = arguments.length;
     let i = d;
@@ -23,6 +24,7 @@ class Wave2 extends Component {
     while (i--) sum += arguments[i].getAmp();
     return sum / d + BASELINE;
   }
+
   loop(points, ctx, ...osc) {
     /// move points to the left
     for(let i = 0; i < COUNT - 1; i++) {
@@ -58,13 +60,14 @@ class Wave2 extends Component {
     ctx.fillStyle = '#1a1a24';
     this.loop(points, ctx, osc1, osc2, osc3);
   }
+  
   render() { 
     return(
-      <div className="wave2-container">
+      <div className="wave-container">
         <canvas id={this.props.canvasId || 'wave'}></canvas>
       </div>
     )
   }
 }
 
-export default Wave2;
+export default Wave;

@@ -1,16 +1,5 @@
 const webpack = require('webpack');
 const HtmlWebPackPlugin = require('html-webpack-plugin');
-const dotenv = require('dotenv');
-
-let envKeys = {};
-
-const env = dotenv.config().parsed;
-if (env) {
-  envKeys = Object.keys(env).reduce((prev, next) => {
-    prev[`process.env.${next}`] = JSON.stringify(env[next]);
-    return prev;
-  }, {});
-}
 
 module.exports = {
   output: {
@@ -70,7 +59,6 @@ module.exports = {
     ]
   },
   plugins: [
-    new webpack.DefinePlugin(envKeys),
     new webpack.ProvidePlugin({
       $: "jquery",
       jQuery: "jquery",
