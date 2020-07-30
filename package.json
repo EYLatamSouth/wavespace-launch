@@ -1,6 +1,6 @@
 {
   "name": "wavespace-launch",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Waiting screen used in the physical space of wavespace™ LAS.",
   "keywords": [
     "react",
@@ -23,7 +23,6 @@
   },
   "devDependencies": {
     "@babel/core": "^7.10.5",
-    "@babel/preset-env": "^7.10.4",
     "@babel/preset-react": "^7.10.4",
     "autoprefixer": "^9.8.5",
     "babel-loader": "^8.1.0",
