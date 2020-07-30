@@ -1,34 +1,52 @@
-# wavespace launch
+# Wavespace Launch
 
-Aplicação que será utilizada para inauguração do wavespace de São Paulo. Consiste na ativação por autenticação através do reconhecimento de face.
+Waiting screen used in the physical space of wavespace™ LAS.
 
-## Deploy
+## Getting Started
 
-Esse repositório contém toda a estrutura da camada de front-end (que é executada no client).
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
-Para fazer um novo deploy, é necessário gerar um build do projeto e subir no Azure como um ZipDeploy. Os passos são os seguintes:
+See [Deployment](#deployment) for notes on how to deploy the project on a live system.
 
-### 1. Geração do build
+### Screenshots
 
-Rodar ```npm run build``` na raiz do projeto.
+<p>
+  <img src="./src/assets/img/screenshot-1.png" alt="wavespace Launch screenshot" />
+</p>
 
-### 2. Geração do zip
+<p>
+  <img src="./src/assets/img/screenshot-2.png" alt="wavespace Launch screenshot" />
+</p>
 
-Rodar os seguintes comandos:
-  
-```cd build``` 
+### Prerequisites
 
-```zip -r build.zip .```
+After cloning this repository, enter its root folder and type ```npm install``` in a terminal window. This will download and install all the required packages to make this application functional.
 
-### 3. Fazer upload do zip no azure
+### Installing
 
-Acessar no endereço https://wavespacelaunch.scm.azurewebsites.net/ZipDeploy/ utilizando o browser e arrastar o zip gerado lá dentro.
+Open a terminal window and type ```npm run dev```. This will launch the application in a new browser's tab.
 
-## Rotas da aplicação
+For every change you make in this project, the opened browser window will automatically update.
 
-```/``` ```/holder``` ```/qrcode``` ```/starter``` ```/welcome``` ```/welcome-sp``` ```/welcome-las```
+## Deployment
 
-## Pacotes utilizados na aplicação
+To bundle the application, type ```npm run build``` in a terminal window. This will generate a ```dist``` folder containing all the compiled code and production-ready files.
 
-* react-icons - https://github.com/react-icons/react-icons
-* react-magic - https://github.com/lit-forest/react-magic
+In the same terminal window, enter the newly generated ```dist``` folder by typing ```cd dist```.
+
+Then type ```zip -r build.zip .``` to generate a compressed file called ```build.zip```. You can upload this file directly to the web service of your choice.
+
+## Built With
+
+* [Webpack](https://webpack.js.org/) – JavaScript module bundler
+* [React](https://reactjs.org/) – JavaScript library for UI
+
+## Contributing
+
+Please feel free to propose new features by raising an [Issue](https://github.com/EYLatamSouth/wavespace-launch/issues/new/choose) or creating a Pull Request.
+
+## Authors
+
+* **Eduardo Basso** – *Initial work* – [eduardobasso](https://github.com/eduardobasso)
+
+See also the list of [contributors](https://github.com/EYLatamSouth/wavespace-launch/contributors) who participated in this project.
