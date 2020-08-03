@@ -1,4 +1,4 @@
-# Wavespace Launch
+# wavespace Launch
 
 Waiting screen used in the physical space of wavespace™ LAS.
 
