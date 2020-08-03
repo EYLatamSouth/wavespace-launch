@@ -2,6 +2,8 @@
 
 Waiting screen used in the physical space of wavespace™ LAS.
 
+![Deployment to GitHub Pages](https://github.com/EYLatamSouth/wavespace-launch/workflows/Deployment%20to%20GitHub%20Pages/badge.svg)
+
 ## Getting Started
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
