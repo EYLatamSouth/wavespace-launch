@@ -28,6 +28,6 @@ jobs:
       - name: Deploy to Github Pages
         run: |
           git remote set-url origin https://git:${GITHUB_TOKEN}@github.com/EYLatamSouth/wavespace-launch.git
-          npm run gh-pages -- -u "github-actions-bot <support+actions@github.com>"
+          npm run deploy
         env:
           GITHUB_TOKEN: ${{ secrets.RELEASE_GITHUB_TOKEN }}
