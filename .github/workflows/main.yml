@@ -27,6 +27,8 @@ jobs:
 
       - name: Deploy to Github Pages
         run: |
+          git config --global user.name ${GITHUB_ACTOR}
+          git config --global user.email ${GITHUB_ACTOR}@my-domain.io
           git remote set-url origin https://git:${GITHUB_TOKEN}@github.com/EYLatamSouth/wavespace-launch.git
           npm run deploy
         env:
