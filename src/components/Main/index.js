@@ -1,7 +1,5 @@
 import React, { Fragment } from 'react';
-import { BrowserRouter as Router, Switch, Route, Redirect } from 'react-router-dom';
-
-import history from "../../utils/history";
+import { HashRouter as Router, Switch, Route, Redirect } from 'react-router-dom';
 
 import Holder from "../Holder";
 import HolderFull from "../HolderFull";
@@ -18,7 +16,7 @@ function WelcomeFull() {
 export default function Main() {
   return (
     <main>
-      <Router history={history}>
+      <Router>
         <Switch>
           <Route exact path='/' component={Holder} />
           <Route exact path='/las' component={HolderFull} />
