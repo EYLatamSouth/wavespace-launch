@@ -1,13 +1,10 @@
 const path = require('path');
-const webpack = require('webpack');
 const HtmlWebPackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   entry: "./src/index.js",
   output: {
-    path: path.resolve(__dirname, "dist"),
-    filename: "index_bundle.js",
-    publicPath: '/'
+    filename: "bundle.js"
   },
   module: {
     rules: [{
@@ -32,7 +29,7 @@ module.exports = {
         }, {
           loader: 'postcss-loader',
           options: {
-            plugins: function () {
+            plugins: function() {
               return [
                 require('autoprefixer')
               ];
@@ -66,11 +63,6 @@ module.exports = {
     historyApiFallback: true,
   },
   plugins: [
-    new webpack.ProvidePlugin({
-      $: "jquery",
-      jQuery: "jquery",
-      "window.jQuery": "jquery"
-    }),
     new HtmlWebPackPlugin({
       template: "./src/index.html",
     })
