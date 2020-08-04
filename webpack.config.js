@@ -5,7 +5,7 @@ module.exports = {
   entry: "./src/index.js",
   output: {
     filename: "bundle.js",
-    publicPath: path.resolve(__dirname)
+    publicPath: ""
   },
   module: {
     rules: [{
